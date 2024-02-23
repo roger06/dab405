@@ -1,0 +1,42 @@
+/* flex box is a great all-round option. */
+
+body {
+    width: 80%;
+    margin: 0 10%;
+}
+
+main {
+    border: 2px dashed blue;
+}
+
+header {
+    height: 100px;
+    border: 1px dotted black;
+}
+
+#container {
+
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+
+}
+
+
+aside {
+
+    outline: 1px dotted green;
+    background-color: lightcoral;
+}
+
+section {
+
+    padding: 10px;
+    outline: 1px solid purple;
+
+}
+
+footer {
+    height: 100px;
+    border: 1px solid pink;
+
+}

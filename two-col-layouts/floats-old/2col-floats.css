@@ -1,0 +1,39 @@
+  /* this is the OLD way
+  
+  it's useful to see how divs etc work,
+
+  but DO NOT use it! It will still work but don't use it
+  */
+
+  main {
+
+      width: 80%;
+      border: 1px dashed blue;
+  }
+
+  header {
+      height: 100px;
+      border: 1px dotted black;
+    }
+    
+    aside{
+        width: 20%;
+        float: left;
+        outline: 1px dotted green;
+        background-color: lightcoral;
+    }
+    
+    section {
+        
+        width: 80%;
+        float: right;
+        outline: 1px solid purple;
+        
+    }
+    
+    footer{
+        height: 100px;
+        border: 1px solid pink;
+        clear: both;
+
+    }
