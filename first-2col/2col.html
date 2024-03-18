@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>World's first - two</title>
+
+    <style>
+        #container {
+
+            outline: 1px black dotted;
+        }
+        main {
+            display: flex;
+            flex-direction: row;
+        }
+        aside {
+            outline: 2px yellow dashed;
+            flex: 1;
+        }
+
+        section {
+
+            flex: 5;
+            outline: 1px black dashed;
+        }
+
+        header {
+
+            outline: 1px red solid;
+            height: 100px;
+        }
+
+
+        footer {
+
+            outline: 1px blue dashed;
+            height: 100px;
+        }
+
+        @media (width < 1000px)   {
+            
+            body {
+                background-color: pink;
+            }
+
+            main {
+
+                flex-direction: column;
+            }
+            aside {
+                flex: 1;
+            }
+
+            section{
+                flex: 1;
+            }    
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+
+        <header>
+
+            <p>this is the header</p>
+        </header>
+
+        <main>
+
+            <aside>
+                <p>aside askfj askd kkashdk jahs dkj as</p>
+            </aside>
+            
+            <section>
+                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero nostrum similique officiis fugiat quisquam beatae id obcaecati amet nulla. Ea voluptatibus provident assumenda at minima, non voluptates molestias consequuntur consectetur.</p>
+            </section>
+
+            
+        </main>
+
+        <footer>
+            <p>footer</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

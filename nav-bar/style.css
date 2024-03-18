@@ -1,0 +1,55 @@
+header {
+    width: 80%;
+    margin: 0 auto;
+    outline: 1px dashed black;
+    display: flex;
+  }
+  
+  #logo {
+    display: flex;
+    outline: 1px solid blue;
+    width: 300px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center; 
+  }
+  
+  #logo p {
+    display: flex;
+    height: 80%;
+    width: 80%;
+    background-image: linear-gradient(red, yellow);
+    align-items: center;
+    justify-content: center; 
+  }
+  
+  nav {
+    display: flex;
+    outline: 1px dotted red;
+    justify-content: flex-end;
+    background: lightgray;
+    width: 100%;
+    padding-right: 10px;
+    
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 11px;
+    flex-wrap: wrap;
+  }
+  nav ul li {
+    
+    display: flex;
+    height: 80px;
+    width: 100px;
+    border: 1px yellow solid;
+    border-radius: 15px;
+    background: yellow;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  
