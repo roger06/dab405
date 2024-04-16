@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'cadmanregular';
+    src: url('Cadman_Roman-webfont.eot');
+    src: url('Cadman_Roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Cadman_Roman-webfont.woff2') format('woff2'),
+         url('Cadman_Roman-webfont.woff') format('woff'),
+         url('Cadman_Roman-webfont.ttf') format('truetype'),
+         url('Cadman_Roman-webfont.svg#cadmanregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'cadmanbold_italic';
+    src: url('Cadman_BoldItalic-webfont.eot');
+    src: url('Cadman_BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Cadman_BoldItalic-webfont.woff2') format('woff2'),
+         url('Cadman_BoldItalic-webfont.woff') format('woff'),
+         url('Cadman_BoldItalic-webfont.ttf') format('truetype'),
+         url('Cadman_BoldItalic-webfont.svg#cadmanbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

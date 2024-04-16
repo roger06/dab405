@@ -1,0 +1,89 @@
+<!--file to demonstrate vendor prefixes-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="vendor prefixes">
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <title>vendor prefixes</title>
+
+    <style>
+        .crossfade {
+            width: 500px;
+            height: 400px;
+ 
+            /* this doesn't (shouldn't ! ) work in chrome*/
+            background-image: cross-fade(url("city.jpg"), url("bike.jpg"), 75%);
+            
+            
+            /* this is required for Chromium browsers */
+            background-image: -webkit-cross-fade(url("city.jpg"), url("bike.jpg"), 75%);
+            
+            /* neither of the above will work in Firefox - in fact FF does not support it! */
+        }
+
+
+        body {
+            font-size: 100%;
+        }
+
+        .box {
+            font-family: monospace;
+            font-size: 1.5em;
+            height: 100px;
+            width: 360px;
+            margin-top: 5%;
+            margin-left: 10%;
+            padding: 20px;
+            border: 1px solid gray;
+            border-radius: 15px 8px;
+
+            background-image: linear-gradient(left, #999999 0%, #ffffff 100%);
+            /* this doesn't work in Chrome, Safari or Firefox (mac)
+            need to use the prefixes below
+            */
+
+
+            background-image: -webkit-gradient(linear, left top, right top, from(#999999), to(#ffffff));
+            background-image: -webkit-linear-gradient(left, #999999 0%, #ffffff 100%);
+            background-image: -o-linear-gradient(left, #999999 0%, #ffffff 100%);
+
+
+
+
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        <p>This is a box. It should have rounded corners and a gradient background.</p>
+    </div>
+
+
+    <p>Copy this into <a href="https://autoprefixer.github.io/"></a>https://autoprefixer.github.io/ </p>
+    <pre>
+
+     background-image: linear-gradient(left, #999999 0%, #ffffff 100%);
+    </pre>
+
+
+
+
+
+
+    <div class="crossfade"></div>
+
+    <h3>Images</h3>
+    <p><img src="city.jpg" style=""></p>
+    <p><img src="bike.jpg"></p>
+
+</body>
+
+</html>

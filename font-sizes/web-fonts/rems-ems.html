@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+
+
+        <link rel="shortcut icon" href="favicon.ico">
+
+        <title>Font size : ems and rem</title>
+
+
+        <style>
+
+
+            body {
+
+                font-size: 100%;
+            }
+
+            .em1{
+                font-size: 1em;
+            }
+
+            .em2{
+                font-size: 2em;
+            }
+
+           .rem1{
+                font-size: 1rem;
+            }
+
+            .rem2{
+                font-size: 2rem;
+            }
+
+
+
+        </style>
+
+
+    </head>
+
+    <body>
+        <p>This is a p tag with no styling. It inherits size from &lt;body&gt; which is set at 100% thus this the same as 1em in this instance.</p>
+
+        <p class="em1">
+        This is 1 em (100% of parent - body)
+        </p>
+          <p class="em2">
+        This is 2 em  (200% of parent - body)
+        </p>
+        <hr>
+
+           <p class="rem1">
+        This is 1 rem
+        </p>
+          <p class="rem2">
+        This is 2 rem
+        </p>
+
+           <hr>
+
+
+        <div class="em2">
+            <p class="em1">
+            This is 1 em inside a 2 em div. It is effectively 100% of 2em which is 200% of the body font.
+            </p>
+        </div>
+
+         <div class="em2">
+            <p class="rem1">
+            This is 1 rem inside a 2 rem div. It is effectively 100% of the body font.
+            </p>
+        </div>
+
+
+    </body>
+</html>
