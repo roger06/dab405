@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        header{
+            outline: 1px dotted black;
+            background-color: aqua;
+            height: 100px;
+        }
+        main{
+            outline: 1px dotted yellow;
+            display: flex;
+            min-height: 500px;
+         }
+
+
+        aside {
+            outline: 1px dotted green;
+            flex: 2;    
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0;
+        }
+
+
+        section {
+            outline: 1px dotted red;
+            flex: 5;    
+        
+        }
+        footer {
+            outline: 1px dotted purple;
+
+        }
+
+        /* break point 1200px for tablet */
+
+        @media only screen and (max-width: 800px) {
+            body {
+
+                background-color: brown;
+            }
+            main {
+
+                flex-direction: column;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>This is the header</header>
+    <main>
+
+        <aside>
+
+            <ul>
+                <li>this is a link</li>
+                <li>this is a link</li>
+                <li>this is a link</li>
+                <li>this is a link</li>
+                <li>this is a link</li>
+                <li>this is a link</li>
+            </ul>
+        </aside>
+        <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptates saepe, repellendus deleniti vitae ab provident itaque ex distinctio tempora fugit id, asperiores numquam quidem rem. Eligendi vero voluptatem sint.</section>
+    </main>
+
+    <footer>
+
+        <button>Link to somthing</button>
+        <button>Link to somthing else</button>
+
+    </footer>
+    
+</body>
+</html>
