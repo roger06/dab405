@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vendor Prefix Example</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: url('https://picsum.photos/1200/800') no-repeat center center;
+      background-size: cover;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    .frosted-box {
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px); /* Safari */
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 16px;
+      padding: 2rem;
+      color: #fff;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .clamp-text {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .no-select {
+      user-select: none;
+      -webkit-user-select: none; /* Safari */
+    }
+
+    .custom-button {
+      appearance: none;
+      -webkit-appearance: none; /* Safari */
+      background: #000;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .clipped-shape {
+      width: 150px;
+      height: 150px;
+      background: #fff;
+      clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+      -webkit-clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+      margin: 1rem auto;
+    }
+
+    .outlined-text {
+      font-size: 2rem;
+      color: transparent;
+      -webkit-text-stroke: 1px white;
+    }
+  </style>
+</head>
+<body>
+  <div class="frosted-box">
+    <div class="outlined-text no-select">Frosted UI + Text Stroke</div>
+    <p class="clamp-text">
+      This paragraph is clamped to three lines using -webkit-line-clamp. It won’t show more content beyond that, even if it’s there. This is useful for previews or summaries in a UI component. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam incidunt consectetur, asperiores omnis recusandae facere cupiditate corporis consequatur sed nulla vitae dolore ea doloribus, velit repellat quas, voluptatum voluptatibus. Asperiores!
+    </p>
+    <div class="clipped-shape"></div>
+    <button class="custom-button">No Native Styles</button>
+  </div>
+</body>
+</html>

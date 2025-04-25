@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vendor Prefix Example</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      /* background: url('https://picsum.photos/1200/800') no-repeat center center; */
+      background-size: cover;
+      margin: 0;
+      padding: 2rem;
+      background: #a8a4a4;
+    }
+
+    .box {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 16px;
+      padding: 2rem;
+      color: #fff;
+      max-width: 600px;
+      margin: auto;
+      outline: 2px solid #fff;
+    }
+
+    .clamp-text {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+ 
+
+    
+    
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="outlined-text no-select">'clamped' text</div>
+    <p class="clamp-text">
+      This paragraph is clamped to three lines using -webkit-line-clamp. It won’t show more content beyond that, even if it’s there. This is useful for previews or summaries in a UI component.
+    </p>
+  </div>
+  <p>&#x2190; reduce viewport to demo</p>
+</body>
+</html>

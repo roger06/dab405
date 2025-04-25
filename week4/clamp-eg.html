@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3 Column Flexbox Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background: #f0f0f0;
+    }
+
+    .container {
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 70%;
+      outline: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .column {
+      flex: 1;
+      min-width: 250px;
+      background: white;
+      padding: 1rem;
+      padding-bottom: 10px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: left;
+
+      
+    }
+
+    .column img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    .column p {
+      margin-top: 1rem;
+      color: #333;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+
+      
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="column">
+      <img src="https://picsum.photos/300/200?random=1" alt="Random Image 1">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem at quam cum. Quam impedit a eligendi, hic nostrum nam, modi sit id facilis blanditiis eveniet. Alias amet deserunt voluptatibus suscipit!</p>
+    </div>
+    <div class="column">
+      <img src="https://picsum.photos/300/200?random=2" alt="Random Image 2">
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </div>
+    <div class="column">
+      <img src="https://picsum.photos/300/200?random=3" alt="Random Image 3">
+      <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+    </div>
+  </div>
+
+</body>
+</html>
