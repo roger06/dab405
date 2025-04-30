@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Responsive Web design</title>
+<link rel="stylesheet" href="scalable-images.css">
+</head>
+
+<body>
+    
+<div id="container">
+	<div id="innercontainer">
+
+		<header>
+         <img src="logo.png" width="300" height="89"    alt="logo">
+         <img src="header-photo.jpg" height ="99" class="rightimg">
+<!--  if we want to style the second image separately we'll have to:
+        a: give it a different class e.g. 
+-->
+  
+        </header>
+
+        <section>
+                  <h1>Responsive Images</h1>
+            <p>We will have just one break point for this exercise</p>
+            <p>Note that both header images re-size - but we want to hide the one of the bridge?</p>
+        <pre>@media screen and (min-width: 320px) 
+                and (max-width: 600px) {}</pre>
+            <p>Don't worry that this 'breaks' between phone and desktop</p>
+           <img src="photo.jpg" width="540"  height="305" alt="sydney opera house">
+            
+        </section>
+
+		<aside>
+       
+        </aside>   
+		<footer></footer>
+
+	</div> <!-- innercontainer -->
+</div><!-- container -->
+
+</body>
+</html>

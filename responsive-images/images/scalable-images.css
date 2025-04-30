@@ -1,0 +1,112 @@
+
+body {
+	color: black;
+	background-color: white;
+	font-family: Arial, Helvetica;
+	font-size: 100%; /* of browser default */
+}
+
+#container {
+
+	width: 80%;
+	margin: 0 auto;
+	
+}
+
+#innercontainer {
+	background-color: black;
+	width: 97%;
+	margin: 0 auto;
+}
+
+
+/*html 5 elements */
+
+header {
+height: 100px;
+background-color: #4d4849;
+
+}
+section{
+
+min-height: 500px;
+background-color: lightgray;
+float: left;
+width: 625px; 
+
+}
+aside{
+width: 310px;
+float: right;
+background-color: #7a7575;
+min-height: 500px;
+
+}
+
+footer{
+height: 50px;
+clear: both;
+background-color: #9f9d9d;
+
+}
+
+
+header .rightimg {
+    
+   float: right
+}
+
+
+/* one break point for this exercise */
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+
+/*    first some structural changes */
+ #container {
+
+	width: 100%;
+	margin: 0;
+	
+}
+   
+    aside { display: none;} 
+   section { width: 100%;} /* as we've reomvod the right col'  */
+    
+/*adjust images */
+    
+    header img {
+        
+         width: 40%;
+         height: auto;
+    }
+    
+/*    but there's not much point scaling the image if the <header> stays the same height so  ... */
+    
+    header {
+        
+        height: 55px;
+    }
+    
+    
+/* second header image */
+    header .rightimg {
+    
+/*        display: none;*/
+        /* stil gets downloaded though       */
+    }
+    
+    section img {
+        
+/*        width: 350px;   a fixed width isn't a great idea - but might be useful sometimes.      */
+        
+        max-width: 80%;
+        height: auto;
+    }
+    
+   
+    
+  
+}
+
+
+

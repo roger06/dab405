@@ -1,0 +1,274 @@
+
+/*css reset */
+* {
+
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+/*	background-image: url("bg.jpg");*/
+	background-size: cover;  /*this seems better*/
+	/*background-size: contain;*/
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end reset */
+
+body {
+	color: black;
+	background-color: white;
+	font-family: Arial, Helvetica;
+	font-size: 100%; /* of browser default */
+}
+
+#container {
+display: none;
+	width: 80%;
+	margin: 0 auto;
+	
+}
+
+#innercontainer { /*blog*/
+	background-color: black;
+	width: 97.9%;
+	margin: 0 auto;
+}
+
+
+/*html 5 elements */
+
+header {
+height: 100px;
+background-color: lightgray;
+
+}
+section{
+
+min-height: 500px;
+background-color: lightgray;
+float: left;
+/*width: 625px;*/
+width: 63.4%; /* was 66.4 - but minus 1% for adding the left padding, then take another 2% for r padding*/
+padding-left: 1%;
+padding-right: 2%;
+padding-top: 1%;
+}
+
+
+aside{
+/*width: 310px;*/
+width: 31.9%;/* was 32.9 - but minus 1% for adding the left padding*/
+padding-left: 1%;
+padding-top: 1%;
+float: right;
+background-color: lightblue;
+min-height: 500px;
+
+}
+
+footer{
+height: 50px;
+clear: both;
+background-color: pink;
+
+}
+
+
+ 
+
+
+h1, h2 {
+
+	margin-bottom: 0.5em;
+	font-weight: bold;
+}
+
+h1 {
+ font-size: 1.5em;
+
+}
+
+h2 {
+
+font-size: 1.1em;
+
+}
+
+p{
+
+	font-size: 0.9em;
+}
+
+a {
+
+	font-size: 0.625em;
+	/* aiming for 10px size = 10 / 16 = 0.625*/
+}
+img {
+
+	max-width: 100%;
+	height: auto;
+}
+
+
+/*Responsive - media queries*/
+
+/*everything up to and including 768px
+
+e.g. 10 inch iPad in portrait
+*/
+
+@media screen and (max-width: 768px) {
+
+	body {
+
+		/*display: none;*/
+		background-image: none;
+		background-color: lightblue;
+
+	}
+
+
+	#container {
+
+		width: 100%;
+		margin: 0 1% 0 1%;
+		
+	}
+    
+    
+    
+header {
+height: 90px;
+
+}
+    header img {
+       
+		max-width:  30%;
+        
+	}
+
+
+}
+
+/*end up to 768*/
+
+
+/*everything up to and including 320px - we're using bigger for testing as browser won't go that narrow
+
+e.g. small phone in portrait
+*/
+/*@media screen and (max-width: 400px) {
+
+	body {
+
+		 
+		background-image: none;
+		background-color: lightgray;
+		margin: 0;
+	}
+
+
+	#container {
+
+		width: 100%;
+		margin: 0;
+		
+	}
+
+}*/
+
+/*end up to 320*/
+
+
+
+/*everything between 320px - and 480
+
+e.g. small phone in portrait
+*/
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+	body {
+
+		/*display: none;*/
+		background-image: none;
+		background-color: lightgray;
+		margin: 0;
+	}
+
+
+	#container {
+
+		width: 100%;
+		margin: 0;
+		
+	}
+
+/*hide left col*/
+	aside {
+
+		display: none;
+	}
+
+
+	section {
+
+		width: 100%;
+		min-height: auto;
+	}
+
+	header {
+
+		height: 50px;
+	}
+
+	header img {
+		width: 40%;
+	}
+    
+    footer {
+        
+        height: 10px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
