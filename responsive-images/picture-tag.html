@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Responsive Web design - picture tag</title>
+<!--    <link rel="stylesheet" href="responsive.css">-->
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+ 
+<style>
+    
+    #container {
+        
+        margin:  0 auto;
+        width: 80%;
+    }
+    
+    </style>
+
+</head>
+
+<body>
+
+    <div id="container">
+    
+
+         
+            <section>
+
+                <h1>Responsive images with picture tag</h1>
+
+                <picture>
+                    <source media="(min-width: 800px)" srcset="img/large800.jpg">
+                    <source media="(min-width: 465px)" srcset="img/medium400.jpg">
+                    <source media="(min-width: 300px)" srcset="img/small200.jpg">
+                    <img src="img/large800.jpg" alt="scrset" style="width:auto;">
+                </picture>
+                
+            </section>
+
+
+
+
+
+          
+    
+    </div><!-- container -->
+    
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Responsive Web design course</title>
+<link rel="stylesheet" href="bg-images.css">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  
+
+
+<!--[if lt IE 9]>
+    <script src="html5shiv.js"></script>
+<![endif]-->
+
+
+
+
+</head>
+
+<body>
+
+<div id="container">
+	<div id="innercontainer">
+
+		<header>
+			<img src="img/logo.png" width="300" height="89">
+
+			
+        
+        </header>
+
+		<section>
+
+			<h1>Background images</h1>	
+
+			 
+			<p>More or less any element can have a background image.</p>
+            <p>Applying a background image to the body tag effectively applies it to the whole site</p>
+			<h1>A heading <a href="#">More here</a></h1>
+ 
+			</section>
+
+		<aside>
+
+		</aside>   <!-- doesn't mean 'side' means less important  -->
+
+
+
+
+		<footer>footer</footer>
+
+	</div> <!-- innercontainer -->
+</div><!-- container -->
+<!-- the ajax below automatically re-sizes a bg image -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="jquery.backstretch.min.js"></script>
+<script>
+    $.backstretch("bg1.jpg");
+</script>
+  
+    
+
+</body>
+</html>
