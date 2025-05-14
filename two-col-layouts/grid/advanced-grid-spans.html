@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic CSS Grid</title>
+    <style>
+        body {
+            width: 80%;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        #gridcontainer {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 100px 100px 120px;
+        }
+
+        /* all divs */
+        #gridcontainer>* {
+
+            border: 1px dashed red;
+            border-radius: 15px;
+        }
+
+        .item1 {
+
+            grid-column-start: 2;
+        }
+
+        .item3 {
+
+            /* grid-column: 1/4; */
+            /* or */
+            grid-column: span 3;
+            grid-row: 1;
+            /* or */
+            /* grid-row: 2/3; */
+            /* or */            
+
+         }
+    </style>
+</head>
+
+<body>
+
+    <div id="gridcontainer">
+
+        <div class="item1">Div 1</div>
+        <div class="">div 2</div>
+        <div class="">div 3</div>
+        <div class="item3">this is div four and it spans 3 columns</div>
+            
+        <div class="">this is div number five</div>
+        <div class="">and finally this is div 6</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Template areas</title>
+    <style>
+        body {
+            width: 80%;
+        }
+
+        #gridcontainer {
+
+            display: grid;
+            grid-template-columns: repeat(3, 200px);
+            grid-template: 
+            "python java rust"
+            "Dart fortran Pascale";
+            /* easier to read on separate lines. */
+             gap: 10px;
+
+        }
+
+
+
+/* Defines a grid template by referencing the names of the grid areas which are specified with the grid-area property. Repeating the name of a grid area causes the content to span those cells. A period signifies an empty cell. The syntax itself provides a visualization of the structure of the grid.
+#
+https://css-tricks.com/snippets/css/complete-guide-grid/#prop-grid-template-areas
+*/
+
+
+        .python {
+
+            grid-area: python;
+            background-color: aqua;
+        }
+
+        #gridcontainer>* {
+
+            border: 1px dashed red;
+            border-radius: 15px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Grid Template areas</h1>
+
+    <div id="gridcontainer">
+
+        <div>Java is a language for people who like to type a lot.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores reprehenderit temporibus ut cupiditate
+            consequuntur modi exercitationem vero, nobis dolorem.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores reprehenderit temporibus ut cupiditate
+            consequuntur modi exercitationem vero, nobis dolorem.</div>
+        <div class="python">Python is a programming language for people who don't like semi colons.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores reprehenderit temporibus ut cupiditate
+            consequuntur modi exercitationem vero, nobis dolorem.</div>
+        <div>Dart is for people who like Java but want something different for mobile apps.</div>
+         
+    </div>
+
+</body>
+
+</html>
